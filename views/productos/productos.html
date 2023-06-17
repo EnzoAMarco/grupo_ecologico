@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/global.css">
+  <link rel="stylesheet" href="/views/productos/productos.css">
+  <title>Greenink</title>
+</head>
+<body> 
+  <nav class="nav_main">
+    <a class="nav_white_logo">
+      <img src="/assets/logo_white.png" alt="logo blanco de la empresa" class="nav_white_logo_img">
+    </a>
+    <ul class="nav_main_ul">
+      <li class="nav_main_li">
+        <a href="#" class="nav_main_li_a font_15">Inicio</a>
+      </li>
+      <li>
+        <a href="#" class="nav_main_li_a font_15">Productos</a>
+      </li>
+      <li>
+        <a href="#" class="nav_main_li_a font_15">Servicios</a>
+      </li>
+      <li>
+        <a href="#" class="nav_main_li_a font_15">¿Quiénes somos?</a>
+      </li>
+      <li>
+        <a href="#" class="nav_main_li_a font_15">Contacto</a>
+      </li>
+    </ul>
+    <a>carrito</a>
+  </nav>
+  <section >
+    <article class="article_carrousel">
+      <img src="/assets/mochilas.png" id="foto_carrousel" class="article_carrousel_img" alt="imagen de promocion"/>
+      <div class="article_carrousel_div">
+        <div class="article_carrousel_div_txt">
+          <h1 id="carrousel_h1" class="article_carrousel_h1 font_3">Mochilas recicladas</h1>
+          <p id="carrousel_p" class="article_carrousel_p font_15">
+            En GreenInk, estamos comprometidos con la creación de soluciones sostenibles en la industria gráfica.
+            Por eso, queremos celebrar tus compras con una oferta especial.
+            Al adquirir productos por un monto superior a 20 mil pesos, te regalaremos una mochila reciclada, fabricada con materiales amigables con el medio ambiente.
+            Esta es nuestra manera de agradecerte por apoyar nuestro compromiso con el planeta y de invitarte a unirte a nuestra causa.
+            ¡Haz tu compra ahora y llévate este regalo exclusivo con GreenInk!
+          </p>
+          <div class="article_carrousel_buttons">
+            <button id="button_carrousel_1" class="button_on font_15" onclick="carrousel(true)">Promo mochilas</button>
+            <button id="button_carrousel_2" class=" font_15" onclick="carrousel(false)">Sumá puntos</button>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="article_products">
+      <div class="article_products_cats">
+
+      <h2 class="font_3 font_white">Productos</h2>
+      
+      <hr class="products_hr">
+        <div class="article_products_cats_filtrar">
+          <label for="ordenar" class="font_2 font_bold font_white article_products_cats_productos_title">Ordenar por</label>
+
+          <select name="ordenar" id="ordenar_productos" class="custom_select" onchange="mayor_menor()">
+            <option value="novedades" class="article_products_cats_productos_input font_black" >Novedades</option>
+            <option value="mayor_precio" class="article_products_cats_productos_input font_black">Mayor precio</option>
+            <option value="menor_precio" class="article_products_cats_productos_input font_black">Menor precio</option>
+            <option value="alfabeticamente" class="article_products_cats_productos_input font_black">Alfabéticamente</option>
+          </select>
+
+          <!-- <form action="">
+            <h2 class="font_2 font_white article_products_cats_productos_title">Ordenar por</h2>
+
+            <input type="checkbox" id="escolares_filtro" name="escolares_filtro" value="escolares_filtro" class="article_products_cats_productos_input">
+            <label for="escolares_filtro" class="font_white">Novedades</label>
+            <br>
+            <input type="checkbox" id="escolares_filtro" name="escolares_filtro" value="escolares_filtro" class="article_products_cats_productos_input">
+            <label for="escolares_filtro" class="font_white">Mayor precio</label>
+            <br>
+            <input type="checkbox" id="escolares_filtro" name="escolares_filtro" value="escolares_filtro" class="article_products_cats_productos_input">
+            <label for="escolares_filtro" class="font_white">Menor precio</label>
+            <br>
+            <input type="checkbox" id="impresiones_filtro" name="impresiones_filtro" value="impresiones_filtro" class="article_products_cats_productos_input">
+            <label for="impresiones_filtro" class="font_white ">Alfabéticamente</label> 
+          </form> -->
+        <hr class="products_hr">
+        <div class="article_products_cats_productos">
+          <h2 class="font_2 font_white article_products_cats_productos_title">Categorías</h2>
+          <ul>
+            <li id="cats_todos" class="font_white article_products_cats_productos_li" onclick="auxIdFunc('todos')">Todos</li>
+            <li id="cats_folletos" class="font_white article_products_cats_productos_li" onclick="auxIdFunc('folletos')">Folletos</li>
+            <li id="cats_bolsas" class="font_white article_products_cats_productos_li" onclick="auxIdFunc('bolsas')">Bolsas</li>
+            <li id="cats_tarjetas" class="font_white article_products_cats_productos_li" onclick="auxIdFunc('tarjetas')">Tarjetas</li>
+            <li id="cats_cuadernos" class="font_white article_products_cats_productos_li" onclick="auxIdFunc('cuadernos')">Cuadernos</li>
+            <li id="cats_lapices" class="font_white article_products_cats_productos_li" onclick="auxIdFunc('lapices')">Lápices</li>
+            <li id="cats_agendas" class="font_white article_products_cats_productos_li" onclick="auxIdFunc('agendas')">Agendas</li>
+          </ul>
+        </div>
+        </div>
+
+        <!-- <div class="article_products_cats_precio">
+          <form action="">
+            <h2 class="font_2">Precio</h2>
+            <ul>
+              <li>Desde</li>
+              <li>Hasta</li>
+            </ul>
+          </form>
+        </div> -->
+
+      </div>
+
+      <div id="container_productos" class="article_products_boxes_container"></div>
+
+    </article>
+  </section>
+
+  <footer>
+    <div>
+      <ul class="footer_ul">
+        <li class="font_1">
+          <span class="font_bold">Integrantes del grupo:</span> Aguilera Braian Alejandro, Marco Enzo Augusto, Martos Tomás Joaquín
+        </li>
+        <li class="font_1">
+          <span class="font_bold">Enlance al sitio del grupo:</span> 
+        </li>
+        <li class="font_1">
+          <span class="font_bold">Trabajo grupal para la materia Diseño y desarrollo web</span>
+        </li>
+        <li class="font_1">
+          <span class="font_bold">Derechos reservados, Imagenes sacadas de:</span>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <img src="/assets/uadeImg.png" alt="Logo uade" class="uade_img">
+    </div>
+    
+  </footer>
+  <script src="/buy_cart.js"></script>
+</body>
+</html>

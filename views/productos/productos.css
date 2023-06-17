@@ -1,0 +1,244 @@
+/* nav */
+.nav_main{
+  position: fixed;
+}
+
+/* article_carrousel */
+
+.article_carrousel{
+  display: flex;
+  /* flex-flow: row-reverse; */
+  /* justify-content: space-between; */
+  flex-flow: row;
+  height: 70vh; 
+}
+
+.article_carrousel_img{
+  /* width: 22vw; */
+  height: 100%;
+}
+
+.article_carrousel_div{
+  display: flex;
+  width: 62vw;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.article_carrousel_div_txt{
+  display: flex;
+  flex-flow: column;
+  width: 50vw;
+}
+
+.article_carrousel_h1{
+  display: inline-block ;
+  padding: 1rem 0;
+  
+}
+
+.article_carrousel_p{
+  display: flex;
+}
+
+.article_carrousel_buttons{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5vw;
+}
+
+.article_carrousel_buttons > button {
+  color: #777777;
+  margin-top: 5rem;
+}
+
+.article_carrousel_buttons > button:hover {
+  cursor: pointer;
+  background-color: #E5E4D5;
+  opacity: .8;
+}
+
+.button_on{
+  border-bottom: 2px solid #777777;
+}
+
+
+
+/* article_products */
+
+.article_products{
+  display: flex;
+  flex-flow: row;
+  background-color: #1C3F39;
+  padding: 1rem 3vw;
+}
+
+.products_hr{
+  margin: 1rem 0;
+}
+
+
+
+/* article_products_cats */
+
+/* .article_products_cats{
+  width: 22vw;
+} */
+
+.article_products_cats_productos_title{
+  padding: 1rem 0;
+}
+
+.article_products_cats_productos_li{
+  padding: .5rem;
+  margin: .5rem;
+  cursor: pointer;
+}
+
+.article_products_cats_productos_input{
+  margin: 1rem 0;
+}
+
+.custom_select{
+  display: block;
+  cursor: pointer;
+
+  margin: 1rem 0 2rem 0;
+  border: 1px solid #777777;
+  background-color: #E5E4D5;
+}
+
+select{
+  border: none;
+  outline: none;
+  background: transparent;
+  /* -webkit-appearance: none;
+  -moz-appearance: none; */
+  appearance: none;
+  border-radius: 0;
+  margin: 1rem 0;
+  display: block;
+  width: 100%;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  color: #211E20;
+  }
+  
+/* article_products_boxes */
+
+.article_products_boxes_container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.article_products_box{
+  height: 40vh;
+  width: 25vw;
+  margin: 4rem 2rem;
+}
+
+.article_products_boxes_container_img{
+  background-size: 18vw 40vh;
+  height: 40vh;
+  width: 18vw;
+  
+  margin: 5vh 5vw;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+/* img productos */
+.article_products_boxes_container_img_agendas{
+  background-image: url('/assets/productos/agendas.png');
+}
+
+.article_products_boxes_container_img_bolsas{
+  background-image: url('/assets/productos/bolsas.png');
+}
+
+.article_products_boxes_container_img_cuadernos{
+  background-image: url('/assets/productos/cuadernos.png');
+}
+
+.article_products_boxes_container_img_folletos{
+  background-image: url('/assets/productos/folletos.png');
+}
+
+.article_products_boxes_container_img_lapices{
+  background-image: url('/assets/productos/lapices.png');
+}
+
+.article_products_boxes_container_img_tarjetas{
+  background-image: url('/assets/productos/tarjetas.png');
+}
+/* img productos */
+
+.article_products_boxes_container_add_cart{
+  display: flex;
+  flex-flow: row-reverse;
+}
+
+.article_products_boxes_container_add_cart_icon{
+  /* width: 3.3rem; */
+  font-size: 2rem;
+  font-weight: bolder;
+  padding: .5rem 1.1rem;
+  margin: 1rem;
+  border-radius: 20rem;
+  background-color: #E5E4D5;
+  color: #1C3F39;
+}
+
+.article_products_boxes_container_data{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 2vh 1vw;
+  /* margin: 1vh .5vw; */
+  /* border-radius: .5rem; */
+  background-color: #1c3f3960;
+}
+
+.article_products_boxes_container_data > h3 {
+  display: inline-block;
+  color: #E5E4D5;
+
+}
+.article_products_boxes_container_data > div {
+  display: inline-block;
+  color: #E5E4D5;
+
+}
+
+
+
+/* clase utilizada en js */
+.display_none{
+  display: none;
+}
+
+.order_1{
+  order: 1;
+}
+
+.order_2{
+  order: 2;
+}
+
+.order_3{
+  order: 3;
+}
+
+.order_4{
+  order: 4;
+}
+
+.order_5{
+  order: 5;
+}
+
+.order_6{
+  order: 6;
+}
