@@ -1,0 +1,61 @@
+* {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Inter', sans-serif;
+}
+
+.titulos-subtitulos {
+    font-weight: bold;
+}
+
+
+.section-mision {
+    background-color: #E5E4D5;
+    padding: 20px;
+}
+
+#titulo-mision {
+    font-size: 36px;
+}
+
+#parrafo-mision {
+    font-size: 16px;
+}
+
+
+
+
+
+
+#titulo-equipo {
+    font-size: 40px;
+}
+
+#parrafo-principal-equipo {
+    font-size: 14px;
+}
+
+
+.h3-equipo-nombres {
+    font-size: 24px;
+}
+
+.parrafos-integrantes-equipo {
+    font-size: 12px;
+    padding: 10px 0 10px 0
+}
+
+.div-imagenes-equipo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    
+}
+
+
+.section-equipo {
+    padding: 20px;
+    border: 10px inset #1C3F39;
+
+}
+
+
