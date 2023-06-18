@@ -32,25 +32,30 @@
 // -PRODUCTOS--PRODUCTOS--PRODUCTOS--PRODUCTOS--PRODUCTOS--PRODUCTOS--PRODUCTOS--PRODUCTOS--PRODUCTOS--PRODUCTOS--PRODUCTOS--PRODUCTOS-
 
 
-
 let productos = [
+  {
+    id:'agendas',
+    producto:'Agendas',
+    precio:30,
+    css:'article_products_boxes_container_img_agendas',
+  },
+  {
+    id:'bolsas',
+    producto:'Bolsas boutique',
+    precio:50,
+    css:'article_products_boxes_container_img_bolsas',
+  },
+  {
+    id:'cuadernos',
+    producto:'Cuadernos',
+    precio:20,
+    css:'article_products_boxes_container_img_cuadernos',
+  },
   {
   id:'folletos',
   producto:'Folletos',
   precio:80,
   css:'article_products_boxes_container_img_folletos',
-  },
-  {
-  id:'cuadernos',
-  producto:'Cuadernos',
-  precio:20,
-  css:'article_products_boxes_container_img_cuadernos',
-  },
-  {
-  id:'bolsas',
-  producto:'Bolsas boutique',
-  precio:50,
-  css:'article_products_boxes_container_img_bolsas',
   },
   {
   id:'lapices',
@@ -63,12 +68,6 @@ let productos = [
   producto:'Tarjetas personales',
   precio:70,
   css:'article_products_boxes_container_img_tarjetas',
-  },
-  {
-  id:'agendas',
-  producto:'Agendas',
-  precio:30,
-  css:'article_products_boxes_container_img_agendas',
   },
 ];
 
@@ -262,4 +261,14 @@ const mayor_menor = () =>{
 
   }
 
+}
+
+const mostrar_carrito = (state) =>{
+
+  const aside_container = document.querySelector('.aside_container');
+
+  state ?  
+  aside_container.classList.remove('display_none')
+  :
+  aside_container.classList.add('display_none')
 }

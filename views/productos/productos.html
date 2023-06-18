@@ -10,29 +10,31 @@
   <title>Greenink</title>
 </head>
 <body> 
-  <nav class="nav_main">
-    <a class="nav_white_logo">
-      <img src="/assets/logo_white.png" alt="logo blanco de la empresa" class="nav_white_logo_img">
-    </a>
-    <ul class="nav_main_ul">
-      <li class="nav_main_li">
-        <a href="#" class="nav_main_li_a font_15">Inicio</a>
-      </li>
-      <li>
-        <a href="#" class="nav_main_li_a font_15">Productos</a>
-      </li>
-      <li>
-        <a href="#" class="nav_main_li_a font_15">Servicios</a>
-      </li>
-      <li>
-        <a href="#" class="nav_main_li_a font_15">¿Quiénes somos?</a>
-      </li>
-      <li>
-        <a href="#" class="nav_main_li_a font_15">Contacto</a>
-      </li>
-    </ul>
-    <a>carrito</a>
-  </nav>
+  <header>
+    <nav class="nav_main">
+      <a class="nav_white_logo">
+        <img src="/assets/logo_white.png" alt="logo blanco de la empresa" class="nav_white_logo_img">
+      </a>
+      <ul class="nav_main_ul">
+        <li class="nav_main_li">
+          <a href="#" class="nav_main_li_a font_15">Inicio</a>
+        </li>
+        <li>
+          <a href="#" class="nav_main_li_a font_15">Productos</a>
+        </li>
+        <li>
+          <a href="#" class="nav_main_li_a font_15">Servicios</a>
+        </li>
+        <li>
+          <a href="#" class="nav_main_li_a font_15">¿Quiénes somos?</a>
+        </li>
+        <li>
+          <a href="#" class="nav_main_li_a font_15">Contacto</a>
+        </li>
+      </ul>
+      <i class="nav_carrito" onclick="mostrar_carrito(true)">carrito</i>
+    </nav>
+  </header>
   <section >
     <article class="article_carrousel">
       <img src="/assets/mochilas.png" id="foto_carrousel" class="article_carrousel_img" alt="imagen de promocion"/>
@@ -63,27 +65,11 @@
           <label for="ordenar" class="font_2 font_bold font_white article_products_cats_productos_title">Ordenar por</label>
 
           <select name="ordenar" id="ordenar_productos" class="custom_select" onchange="mayor_menor()">
-            <option value="novedades" class="article_products_cats_productos_input font_black" >Novedades</option>
+            <option value="alfabeticamente" class="article_products_cats_productos_input font_black">Alfabéticamente</option>
             <option value="mayor_precio" class="article_products_cats_productos_input font_black">Mayor precio</option>
             <option value="menor_precio" class="article_products_cats_productos_input font_black">Menor precio</option>
-            <option value="alfabeticamente" class="article_products_cats_productos_input font_black">Alfabéticamente</option>
           </select>
 
-          <!-- <form action="">
-            <h2 class="font_2 font_white article_products_cats_productos_title">Ordenar por</h2>
-
-            <input type="checkbox" id="escolares_filtro" name="escolares_filtro" value="escolares_filtro" class="article_products_cats_productos_input">
-            <label for="escolares_filtro" class="font_white">Novedades</label>
-            <br>
-            <input type="checkbox" id="escolares_filtro" name="escolares_filtro" value="escolares_filtro" class="article_products_cats_productos_input">
-            <label for="escolares_filtro" class="font_white">Mayor precio</label>
-            <br>
-            <input type="checkbox" id="escolares_filtro" name="escolares_filtro" value="escolares_filtro" class="article_products_cats_productos_input">
-            <label for="escolares_filtro" class="font_white">Menor precio</label>
-            <br>
-            <input type="checkbox" id="impresiones_filtro" name="impresiones_filtro" value="impresiones_filtro" class="article_products_cats_productos_input">
-            <label for="impresiones_filtro" class="font_white ">Alfabéticamente</label> 
-          </form> -->
         <hr class="products_hr">
         <div class="article_products_cats_productos">
           <h2 class="font_2 font_white article_products_cats_productos_title">Categorías</h2>
@@ -99,34 +85,94 @@
         </div>
         </div>
 
-        <!-- <div class="article_products_cats_precio">
-          <form action="">
-            <h2 class="font_2">Precio</h2>
-            <ul>
-              <li>Desde</li>
-              <li>Hasta</li>
-            </ul>
-          </form>
-        </div> -->
-
       </div>
 
       <div id="container_productos" class="article_products_boxes_container"></div>
 
     </article>
   </section>
+  <aside class="aside_container display_none">
 
+    <div class="aside_container_salida" >
+      <i class="font_bold font_3 aside_container_salida_icono" onclick="mostrar_carrito(false)">></i>
+    </div>
+
+    <div class="aside_container_div">
+
+      <h3 class="font_bold font_2 padding_vertical_carrito">Carrito de Compras</h3>
+
+      <hr>
+
+      <h3 class="font_15 padding_vertical_carrito">Producto/s</h3>
+
+      <hr>
+
+      <div class="padding_vertical_carrito">
+        <ul>
+          <div class="carrito_ul_div_Superior">
+            <li>
+              <div class="article_products_boxes_container_img_agendas producto_img_carrito">as</div>
+            </li>
+            
+            <div class="carrito_ul_div_Superior_txt ">
+              <li class="font_15">Agenda/s</li>
+  
+              <li class="font_1">Unidades: 2</li>
+            </div>
+
+          </div>
+          <div class="carrito_ul_div_inferior">
+            <li class="font_15">$ 60</li>
+          </div>
+
+        </ul>
+      </div>
+
+      <hr class="prueba1">
+
+      <div class="padding_vertical_carrito">
+        <ul>
+          <div class="carrito_ul_div_Superior">
+            <li>
+              <div class="article_products_boxes_container_img_bolsas producto_img_carrito">as</div>
+            </li>
+            
+            <div class="carrito_ul_div_Superior_txt ">
+              <li class="font_15">Bolsa/s</li>
+  
+              <li class="font_1">Unidades: 1</li>
+            </div>
+
+          </div>
+          <div class="carrito_ul_div_inferior">
+            <li class="font_15">$ 50</li>
+          </div>
+
+        </ul>
+      </div>
+      
+      <hr>
+
+      <div class="carrito_div_total padding_vertical_carrito">
+        <div>Total</div>
+        <div>$ 110</div>
+      </div>
+      <div class="carrito_div_reservar font_15">Reservar</div>
+
+    </div>
+  </aside>
   <footer>
     <div>
       <ul class="footer_ul">
         <li class="font_1">
+          <legend class="font_bold">Trabajo grupal para la materia Diseño y desarrollo web</legend>
+        </li>
+        <li class="font_1">
           <span class="font_bold">Integrantes del grupo:</span> Aguilera Braian Alejandro, Marco Enzo Augusto, Martos Tomás Joaquín
         </li>
         <li class="font_1">
-          <span class="font_bold">Enlance al sitio del grupo:</span> 
-        </li>
-        <li class="font_1">
-          <span class="font_bold">Trabajo grupal para la materia Diseño y desarrollo web</span>
+          <span class="font_bold">Enlance al sitio del grupo: </span> 
+          <a href="https://enzoamarco.github.io/grupo/index.html" target="_blank">enzoamarco.github.io/grupo</a>
         </li>
         <li class="font_1">
           <span class="font_bold">Derechos reservados, Imagenes sacadas de:</span>
