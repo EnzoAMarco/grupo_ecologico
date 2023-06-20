@@ -77,7 +77,7 @@
   margin: 1rem 0;
 }
 
-
+.display_none
 
 /* article_products_cats */
 
@@ -227,9 +227,6 @@ select{
 
 
 /* clase utilizada en js */
-.display_none{
-  display: none;
-}
 
 .order_1{
   order: 1;

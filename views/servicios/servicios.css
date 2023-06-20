@@ -1,0 +1,1209 @@
+
+
+/*------------------------SERVICIOS------------------------*/
+
+.h1s{
+    text-align: center;
+    font-size: 4em;
+    padding-top: .5rem;
+}
+
+.c_servicios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+    color: #F5F4F4;
+
+}
+
+.caja_car{
+    display: flex;
+    background-image: url(/assets/Img_braian/cartuchos.png);
+    background-size: cover;
+    height: 81.5vh;
+    width: 24vw;
+    flex-flow: column;
+    justify-content: space-between;
+    background-position:center;
+}
+
+.caja_lapis{
+    display: flex;
+    background-image: url(/assets/Img_braian/Lapices.png);
+    background-size: cover;
+    height: 81.5vh;
+    width: 24vw;
+    flex-flow: column;
+    justify-content: space-between;
+    background-position:center;
+}
+
+.caja_papel{
+    display: flex;
+    background-image: url(/assets/Img_braian/hojas.png);
+    background-size: cover;
+    height: 81.5vh;
+    width: 24vw;
+    flex-flow: column;
+    justify-content: space-between;
+    background-position:center;
+}
+
+.caja2_h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(28, 63, 57, 0.9) 13.02%, rgba(28, 63, 57, 0) 100%);
+}
+
+.c2_c{
+    display: flex;
+    padding: 0.5em;
+    flex-flow: column;
+    background: rgba(28, 63, 57, 0.9);
+}
+
+.leer{
+    font-size: 1.5em;
+    margin: 0em;
+}
+
+.c_servicios a{
+    color: #F5F4F4;
+}
+
+.c_servicios a:visited{
+    color: #bdbdbd;
+}
+
+.sec_ser{
+    display: flex;
+    /* height: 18em; */
+    background-color: #F5F4F4;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+
+.clien{
+    width: 30em;
+    font-size: 1.2em;
+}
+
+.clien h2{
+    font-size: 3em;
+}
+
+.clien button{
+    width: 16em;
+    height: 4em;
+    background-color: #344E41;
+    color: #F5F4F4;
+    border-radius: 4em;
+}
+
+.im_clien{
+    background-image: url(/assets/Img_braian/clientes_satisfechos.png);
+    background-repeat: no-repeat;
+    display: flex;
+    width: 40em;
+    height:10em;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+@media screen and (max-width: 950px){
+
+    .c_servicios{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        color: #F5F4F4;
+        flex-flow: column;
+        align-items: center;
+        width: 100VW;
+
+    }
+
+    .caja_car{
+        display: flex;
+        background-image: url(/assets/Img_braian/cartuchos.png);
+        background-size: cover;
+        height: 81.5vh;
+        width: 40vw;
+        flex-flow: column;
+        justify-content: space-between;
+        background-position:center;
+        margin: 2em;
+    }
+    .caja_lapis{
+        display: flex;
+        background-image: url(/assets/Img_braian/Lapices.png);
+        background-size: cover;
+        height: 81.5vh;
+        width: 40vw;
+        flex-flow: column;
+        justify-content: space-between;
+        background-position:center;
+        margin: 2em;
+    }
+    
+    .caja_papel{
+        display: flex;
+        background-image: url(/assets/Img_braian/hojas.png);
+        background-size: cover;
+        height: 81.5vh;
+        width: 40vw;
+        flex-flow: column;
+        justify-content: space-between;
+        background-position:center;
+        margin: 2em;
+    }
+
+    .caja2_h2{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background: linear-gradient(180deg, rgba(28, 63, 57, 0.9) 13.02%, rgba(28, 63, 57, 0) 100%);
+        padding: 1em;
+    }
+    
+    .sec_ser{
+        display: flex;
+        height: auto;
+        background-color: #F5F4F4;
+        justify-content: space-evenly;
+        padding-bottom: 6em;
+        flex-flow: column-reverse;
+    }
+
+    .im_clien{
+    background-image: url(/assets/Img_braian/clientes_satisfechos.png);
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    background-size: contain;
+    margin: 0px;
+    }
+
+    .clien{
+        width: 90vw;
+        font-size: 1.2em;
+        padding: 1em;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+    }
+    
+
+}
+
+@media screen and (max-width: 700px){
+
+    .c_servicios{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        color: #F5F4F4;
+        flex-flow: column;
+        align-items: center;
+        width: 100VW;
+
+    }
+
+    .caja_car{
+        display: flex;
+        background-image: url(/assets/Img_braian/cartuchos.png);
+        background-size: cover;
+        height: 81.5vh;
+        width: 60vw;
+        flex-flow: column;
+        justify-content: space-between;
+        background-position:center;
+        margin: 2em;
+    }
+    .caja_lapis{
+        display: flex;
+        background-image: url(/assets/Img_braian/Lapices.png);
+        background-size: cover;
+        height: 81.5vh;
+        width: 60vw;
+        flex-flow: column;
+        justify-content: space-between;
+        background-position:center;
+        margin: 2em;
+    }
+    
+    .caja_papel{
+        display: flex;
+        background-image: url(/assets/Img_braian/hojas.png);
+        background-size: cover;
+        height: 81.5vh;
+        width: 60vw;
+        flex-flow: column;
+        justify-content: space-between;
+        background-position:center;
+        margin: 2em;
+    }
+
+    .caja2_h2{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background: linear-gradient(180deg, rgba(28, 63, 57, 0.9) 13.02%, rgba(28, 63, 57, 0) 100%);
+        padding: 1em;
+    }
+
+    .sec_ser{
+        display: flex;
+        width: 100vw;
+        height: auto;
+        background-color: #F5F4F4;
+        justify-content: space-evenly;
+        padding-bottom: 6em;
+        flex-flow: column-reverse;
+    }
+
+    .im_clien{
+        background-image: url(/assets/Img_braian/clientes_satisfechos.png);
+        background-repeat: no-repeat;
+        display: flex;
+        width: 80vw;
+        justify-content: center;
+        background-size: contain;
+        margin: 0px;
+        
+        }
+    
+    .clien{
+        width: 90vw;
+        font-size: 1.2em;
+        padding: 1em;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+    }
+}
+
+/*------------------------SERVICIOS_CARTUCHOS_HOJAS_LAPICES------------------------*/
+
+.a_c_s{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+}
+
+.aside_im{
+    background-image: url(/assets/Img_braian/cartuchos.png);
+    background-position: center;
+    width: 70vw;
+    height: 100%;
+    display: flex;
+    flex-flow: column-reverse;
+    color: #F5F4F4;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main_content_text{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    padding: 1em;
+}
+
+.aside_im1{
+    background-image: url(/assets/Img_braian/Lapices.png);
+    background-position: center;
+    width: 70vw;
+    height: 100%;
+    display: flex;
+    flex-flow: column-reverse;
+    color: #F5F4F4;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.aside_im2{
+    background-image: url(/assets/Img_braian/hojas.png);
+    background-position: center;
+    width: 70vw;
+    height: 100%;
+    display: flex;
+    flex-flow: column-reverse;
+    color: #F5F4F4;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.atras{
+    background: linear-gradient(0deg, rgba(28, 63, 57, 0.9) 13.02%, rgba(28, 63, 57, 0) 100%);
+    font-size: 2em;
+    padding-left: 0.5em;
+    background-size: contain;
+}
+
+.atras a{
+    color: #F5F4F4;
+}
+
+.atras a:visited{
+    color: #bdbdbd;
+}
+
+.main_content{
+    background-color: #1C3F39;
+    color: #F5F4F4;
+    display: flex;
+    width: 80vw;
+}
+
+.main_content h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 2em;
+}
+
+.main_content p{
+    padding: 1em;
+    font-size: 1em;
+}
+
+.lineas{
+    margin: 3em;
+    display: flex;
+    flex-flow: row;
+    justify-content:space-evenly ;
+    padding-top: 4em;
+    margin-top: 0em;
+}
+
+.lineas p{
+    font-size: 2em;
+    text-align: center;
+}
+
+.l{
+    border-top: 1px solid #211E20;
+    width: 20vw;
+    margin-top: 3em;
+}
+
+.sec_car{
+    background-color: #F5F4F4;
+}
+
+.sec_car h1{
+    font-size: 2.3em;
+}
+
+.cb_p{
+    background-image: url(/assets/Img_braian/p7.png);
+    background-position: center;
+    width: 10vw;
+    height: 10vw;
+    background-repeat: no-repeat;
+    padding: 3em;
+    background-size: contain;
+    margin: 2em;
+
+}
+
+.cb_p1{
+    background-image: url(/assets/Img_braian/p1.png);
+    background-position: center;
+    width: 10vw;
+    height: 10vw;
+    background-repeat: no-repeat;
+    padding-top: 3em;
+    background-size: contain;
+    margin-top: 2em;
+}
+
+.cb_p2{
+    background-image: url(/assets/Img_braian/p2.png);
+    background-position: center;
+    width: 10vw;
+    height: 10vw;
+    background-repeat: no-repeat;
+    padding-top: 3em;
+    background-size: contain;
+    margin-top: 2em;
+}
+
+.car_ben{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.car_ben li{
+    padding: 0.5em;
+}
+
+.car_ben h2{
+    color: #1C3F39;
+    font-size: 1.8em;
+}
+
+.car_ben_test{
+    width: 50vw;
+    height: 20vh;
+    display: flex;
+    flex-flow: column;
+    padding: 2em;
+}
+
+@media screen and (max-width: 950px){
+
+    .main_content{
+        background-color: #1C3F39;
+        color: #F5F4F4;
+        display: flex;
+        flex-flow: column;
+        width: 100vw;
+        height: 100vh;
+        justify-content: space-evenly;
+        align-items: center;
+    
+    }
+
+
+    .aside_im1{
+        background-image: url(/assets/Img_braian/Lapices.png);
+        background-position: center;
+        width: 40vw;
+        height: 100%;
+        display: flex;
+        flex-flow: column-reverse;
+        color: #F5F4F4;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .aside_im2{
+        background-image: url(/assets/Img_braian/hojas.png);
+        background-position: center;
+        width: 40vw;
+        height: 100%;
+        display: flex;
+        flex-flow: column-reverse;
+        color: #F5F4F4;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .lineas{
+        display: flex;
+        flex-flow: row;
+        justify-content:space-evenly ;
+    }
+
+    .atras{
+        background: linear-gradient(0deg, rgba(28, 63, 57, 0.9) 13.02%, rgba(28, 63, 57, 0) 100%);
+        font-size: 1.5em;
+        padding-left: 0em;
+        width: 40vw;
+
+    }
+
+    .car_ben_test{
+        width: 70vw;
+        height: auto;
+        display: flex;
+        flex-flow: column;
+        padding: 1em;
+    }
+
+    .aside_im{
+        background-image: url(/assets/Img_braian/cartuchos.png);
+        background-position: center;
+        width: 40vw;
+        height: 100%;
+        display: flex;
+        flex-flow: column-reverse;
+        color: #F5F4F4;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .cb_p{
+        background-image: url(/assets/Img_braian/p7.png);
+        background-position: center;
+        width: 16vw;
+        height: 16vw;
+        background-repeat: no-repeat;
+        padding-top: 3em;
+        background-size: contain;
+        margin-top: 2em;
+    
+    }
+    
+    .cb_p1{
+        background-image: url(/assets/Img_braian/p1.png);
+        background-position: center;
+        width: 16vw;
+        height: 16vw;
+        background-repeat: no-repeat;
+        padding-top: 3em;
+        background-size: contain;
+        margin-top: 2em;
+    }
+    
+    .cb_p2{
+        background-image: url(/assets/Img_braian/p2.png);
+        background-position: center;
+        width: 16vw;
+        height: 16vw;
+        background-repeat: no-repeat;
+        padding-top: 3em;
+        background-size: contain;
+        margin-top: 2em;
+    }
+    
+    
+
+}
+
+@media screen and (max-width: 750px){
+
+    .main_content{
+        background-color: #1C3F39;
+        color: #F5F4F4;
+        display: flex;
+        flex-flow: column;
+        width: 100vw;
+        height: 100vh;
+        justify-content: space-evenly;
+        background-size: contain;
+    
+    }
+
+    .aside_im{
+        background-image: url(/assets/Img_braian/cartuchos.png);
+        background-position: center;
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-flow: column-reverse;
+        color: #F5F4F4;
+        align-items: center;
+    }
+
+    .aside_im1{
+        background-image: url(/assets/Img_braian/Lapices.png);
+        background-position: center;
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-flow: column-reverse;
+        color: #F5F4F4;
+        align-items: center;
+    }
+    
+    .aside_im2{
+        background-image: url(/assets/Img_braian/hojas.png);
+        background-position: center;
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-flow: column-reverse;
+        color: #F5F4F4;
+        align-items: center;
+    }
+
+    .atras{
+        background: linear-gradient(0deg, rgba(28, 63, 57, 0.9) 13.02%, rgba(28, 63, 57, 0) 100%);
+        font-size: 1.5em;
+        padding-left: 1em;
+        width: 46vw;
+        padding: 0em;
+        text-align: left;
+        margin-left: 1em;
+    }
+    
+
+    .lineas{
+        display: flex;
+        flex-flow: row;
+        justify-content:space-evenly ;
+
+
+    }
+
+    .car_ben{
+        display: flex;
+        padding: 1em;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .car_ben_test{
+        width: 80vw;
+        height: auto;
+        display: flex;
+        flex-flow: column;
+        padding: 1em;
+
+    }
+
+    .cb_p{
+        background-image: url(/assets/Img_braian/p7.png);
+        background-position: center;
+        width: 20vw;
+        height: 20vw;
+        background-repeat: no-repeat;
+        padding-top: 3em;
+        background-size: contain;
+        
+    
+    }
+
+    .cb_p1{
+        background-image: url(/assets/Img_braian/p1.png);
+        background-position: center;
+        width: 20vw;
+        height: 20vw;
+        background-repeat: no-repeat;
+        padding-top: 3em;
+        background-size: contain;
+    }
+    
+    .cb_p2{
+        background-image: url(/assets/Img_braian/p2.png);
+        background-position: center;
+        width: 20vw;
+        height: 20vw;
+        background-repeat: no-repeat;
+        padding-top: 3em;
+        background-size: contain;
+    }
+    
+
+}
+
+@media screen and (max-width: 620px){
+
+    .main_content{
+        background-color: #1C3F39;
+        color: #F5F4F4;
+        display: flex;
+        flex-flow: column;
+        width: 100vw;
+        height: 100vh;
+        justify-content: space-evenly;
+        background-size: contain;
+    
+    }
+
+    .aside_im{
+        background-image: url(/assets/Img_braian/cartuchos.png);
+        background-position: center;
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-flow: column-reverse;
+        color: #F5F4F4;
+        align-items: center;
+    }
+
+    .aside_im1{
+        background-image: url(/assets/Img_braian/Lapices.png);
+        background-position: center;
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-flow: column-reverse;
+        color: #F5F4F4;
+        align-items: center;
+    }
+    
+    .aside_im2{
+        background-image: url(/assets/Img_braian/hojas.png);
+        background-position: center;
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-flow: column-reverse;
+        color: #F5F4F4;
+        align-items: center;
+    }
+
+    .atras{
+        background: linear-gradient(0deg, rgba(28, 63, 57, 0.9) 13.02%, rgba(28, 63, 57, 0) 100%);
+        font-size: 1.5em;
+        padding-left: 1em;
+        width: 50vw;
+        padding: 0em;
+        text-align: left;
+        
+    }
+    
+
+    .lineas{
+        display: flex;
+        flex-flow: row;
+        justify-content:space-evenly ;
+
+
+    }
+
+    .car_ben{
+        display: flex;
+        padding: 1em;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .car_ben_test{
+        width: 80vw;
+        height: auto;
+        display: flex;
+        flex-flow: column;
+        padding: 1em;
+
+    }
+
+    .cb_p{
+        background-image: url(/assets/Img_braian/p7.png);
+        background-position: center;
+        width: 20vw;
+        height: 20vw;
+        background-repeat: no-repeat;
+        padding-top: 3em;
+        background-size: contain;
+    }
+
+    .cb_p1{
+        background-image: url(/assets/Img_braian/p1.png);
+        background-position: center;
+        width: 20vw;
+        height: 20vw;
+        background-repeat: no-repeat;
+        padding-top: 3em;
+        background-size: contain;
+    }
+    
+    .cb_p2{
+        background-image: url(/assets/Img_braian/p2.png);
+        background-position: center;
+        width: 20vw;
+        height: 20vw;
+        background-repeat: no-repeat;
+        padding-top: 3em;
+        background-size: contain;
+    }
+    
+    
+
+}
+
+@media screen and (max-width: 560px){
+
+    .main_content{
+        background-color: #1C3F39;
+        color: #F5F4F4;
+        display: flex;
+        flex-flow: column;
+        width: 100vw;
+        height: 100vh;
+        justify-content: space-evenly;
+
+    
+    }
+
+    .aside_im{
+        background-image: none;
+        background-position: center;
+        width: 100vw;
+        height: 20vh;
+        display: flex;
+        flex-flow: column-reverse;
+        color: #F5F4F4;
+        align-items: flex-start;
+        background-size: contain;
+    }
+
+    
+    .aside_im1{
+        background-image: none;
+        background-position: center;
+        width: 100vw;
+        height: 20vh;
+        display: flex;
+        flex-flow: column-reverse;
+        color: #F5F4F4;
+        align-items: flex-start;
+        background-size: contain;
+    }
+    
+    .aside_im2{
+        background-image: none;
+        background-position: center;
+        width: 100vw;
+        height: 20vh;
+        display: flex;
+        flex-flow: column-reverse;
+        color: #F5F4F4;
+        align-items: flex-start;
+        background-size: contain;
+    }
+
+    .main_content_text{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .atras{
+        background: linear-gradient(0deg, rgba(28, 63, 57, 0.9) 13.02%, rgba(28, 63, 57, 0) 100%);
+        font-size: 1em;
+        padding-left: 0em;
+        width: 40vw;
+        align-items: center;
+    }
+
+    .lineas{
+
+        display: flex;
+        flex-flow: row;
+        justify-content:space-evenly ;
+
+
+    }
+
+    .car_ben_test{
+        width: 80vw;
+        height: auto;
+        display: flex;
+        flex-flow: column;
+        padding: 1em;
+        margin: 1em;
+    }
+
+    .cb_p{
+        background-image: url(/assets/Img_braian/p7.png);
+        background-position: center;
+        width: 30vw;
+        height: 30vw;
+        background-repeat: no-repeat;
+        padding-top: 3em;
+        background-size: contain;
+      
+    }
+
+    .cb_p1{
+        background-image: url(/assets/Img_braian/p1.png);
+        background-position: center;
+        width: 30vw;
+        height: 30vw;
+        background-repeat: no-repeat;
+        padding-top: 3em;
+        background-size: contain;
+    }
+    
+    .cb_p2{
+        background-image: url(/assets/Img_braian/p2.png);
+        background-position: center;
+        width: 30vw;
+        height: 30vw;
+        background-repeat: no-repeat;
+        padding-top: 3em;
+        background-size: contain;
+    }
+
+}
+
+@media screen and (max-width: 375px){
+
+    .main_content{
+        background-color: #1C3F39;
+        color: #F5F4F4;
+        display: flex;
+        flex-flow: column;
+        width: 100vw;
+        height: 100vh;
+        justify-content: space-evenly;
+
+    
+    }
+
+    .aside_im{
+        background-image: none;
+        background-position: center;
+        width: 100vw;
+        height: 20vh;
+        display: flex;
+        flex-flow: column-reverse;
+        color: #F5F4F4;
+        align-items: flex-start;
+        background-size: contain;
+    }
+
+        
+    .aside_im1{
+        background-image: none;
+        background-position: center;
+        width: 100vw;
+        height: 20vh;
+        display: flex;
+        flex-flow: column-reverse;
+        color: #F5F4F4;
+        align-items: flex-start;
+        background-size: contain;
+    }
+    
+    .aside_im2{
+        background-image: none;
+        background-position: center;
+        width: 100vw;
+        height: 20vh;
+        display: flex;
+        flex-flow: column-reverse;
+        color: #F5F4F4;
+        align-items: flex-start;
+        background-size: contain;
+    }
+
+    .main_content_text{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .atras{
+        background: linear-gradient(0deg, rgba(28, 63, 57, 0.9) 13.02%, rgba(28, 63, 57, 0) 100%);
+        font-size: 1em;
+        padding-left: 0em;
+        width: 40vw;
+        align-items: center;
+    }
+
+    .lineas{
+
+        display: flex;
+        flex-flow: row;
+        justify-content:space-evenly ;
+
+
+    }
+
+    .car_ben_test{
+        width: 80vw;
+        height: auto;
+        display: flex;
+        flex-flow: column;
+        padding: 1em;
+        margin: 1em;
+    }
+
+    .cb_p{
+        background-image: url(/assets/Img_braian/p7.png);
+        background-position: center;
+        width: 30vw;
+        height: 30vw;
+        background-repeat: no-repeat;
+        padding: 1em;
+        background-size: contain;
+        margin-left: 1em;
+        
+    }
+
+    
+    .cb_p1{
+        background-image: url(/assets/Img_braian/p1.png);
+        background-position: center;
+        width: 30vw;
+        height: 30vw;
+        background-repeat: no-repeat;
+        padding: 1em;
+        background-size: contain;
+        margin-left: 1em;
+    }
+    
+    .cb_p2{
+        background-image: url(/assets/Img_braian/p2.png);
+        background-position: center;
+        width: 30vw;
+        height: 30vw;
+        background-repeat: no-repeat;
+        padding: 1em;
+        background-size: contain;
+        margin-left: 1em;
+    }
+
+
+}
+
+/*------------------------CLIENTES_SATISFECHOS------------------------*/
+
+.cs{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding-top: 18vh;
+}
+
+.cs_h1_a{
+    display: flex;
+    text-align: center;
+    width: 60vw;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 2em;
+    color: #211E20;
+}
+
+.cs_h1_a a{
+    font-size: 1.5em;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.cs_h1_a a:visited{
+    color: #211E20;
+}
+
+.cs_s1{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 45vh;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.cs_s2{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 45vh;
+    align-items: center;
+    background-color: #F5F4F4;
+    
+}
+
+.cs_im_1{
+    background-image: url(/assets/Img_braian/p3.png);
+    width: 20vw;
+    /* height: 25vh; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.cs_im_2{
+    background-image: url(/assets/Img_braian/p4.png);
+    width: 20vw;
+    /* height: 25vh; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.cs_im_3{
+    background-image: url(/assets/Img_braian/p5.png);
+    width: 20vw;
+    /* height: 25vh; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.cs_im_4{
+    background-image: url(/assets/Img_braian/p6.png);
+    width: 20vw;
+    /* height: 25vh; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.cs_1{
+    border: 4px solid #1C3F39;
+    width: 40vw;
+    height: 28vh;
+    margin: 1rem;
+    border-radius: 1em;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    padding: 1em;
+    box-sizing: content-box;
+
+}
+
+.cs_text{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    width: 30vw;
+    height: 10vh;
+    margin: 0em;
+}
+
+.cs_text h1, p{
+    margin: 0.2em;
+}
+
+.cs_text img{
+    width: 10vw;
+}
+
+@media screen and (max-width: 900px) {
+    
+    .cs_s1{
+        display: flex;
+        justify-content: space-around;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        flex-flow: column;
+    }
+    
+    .cs_s2{
+        display: flex;
+        justify-content: space-around;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        background-color: #F5F4F4;
+        flex-flow: column;
+    }
+
+    .cs_h1_a{
+        display: flex;
+        text-align: center;
+        width: 76vw;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 2em;
+        color: #211E20;
+    }
+
+    .cs_1{
+        border: 4px solid #1C3F39;
+        width: 70vw;
+        height: 80vh;
+        border-radius: 1em;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+    }
+
+    .cs_text img{
+        width: 30vw;
+    }
+}

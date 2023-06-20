@@ -1,31 +1,4 @@
-// const articleProductsBoxesContainer = document.querySelector('.article_products_boxes_container');
-// const asideMenu = document.querySelector('.aside_animation');
-// const headerColor = document.querySelector('.headerFont');
-// const section = document.querySelector('.grid_1_i2');
-// const listAside = document.querySelector('.list_aside');
-// const formulario_about = document.querySelector('.formulario');
 
-// let menuOpen = false;
-// asideSymbol.addEventListener('click', ()=> {
-//   console.log('click');
-//   if (!menuOpen) {
-//     menuOpen = true ;
-//     listAside.classList.add('list_a_n');
-//     section.classList.add('section_hide');
-//     asideSymbol.classList.add('open');
-//     asideMenu.classList.add('aside_open');
-//     headerColor.classList.add('textBlack');
-//     formulario_about.classList.add('formulario_hide');
-//   } else {
-//     menuOpen = false;
-//     listAside.classList.remove('list_a_n');
-//     asideSymbol.classList.remove('open');
-//     asideMenu.classList.remove('aside_open');
-//     headerColor.classList.remove('textBlack');
-//     section.classList.remove('section_hide');
-//     formulario_about.classList.remove('formulario_hide');
-//   }
-// });
 
 
 // -PRODUCTOS--PRODUCTOS--PRODUCTOS--PRODUCTOS--PRODUCTOS--PRODUCTOS--PRODUCTOS--PRODUCTOS--PRODUCTOS--PRODUCTOS--PRODUCTOS--PRODUCTOS-
@@ -111,8 +84,6 @@ const carrousel_p = document.getElementById('carrousel_p');
 const foto_carrousel = document.getElementById('foto_carrousel');
 const button_carrousel_1 = document.getElementById('button_carrousel_1');
 const button_carrousel_2 = document.getElementById('button_carrousel_2');
-
-
 
 
 for (let i of productos){

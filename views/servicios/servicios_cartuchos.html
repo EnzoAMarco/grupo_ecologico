@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/global.css">
+  <link rel="stylesheet" href="/views/servicios/servicios.css">
+
+  <!-- carrito icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <title>Greenink</title>
+</head>
+<body>
+    <header>
+        <nav class="nav_main">
+          <a class="nav_white_logo">
+            <img src="/assets/logo_white.png" alt="logo blanco de la empresa" class="nav_white_logo_img">
+          </a>
+          <ul class="nav_main_ul">
+            <li class="nav_main_li">
+              <a href="/index.html" class="nav_main_li_a font_15">Inicio</a>
+            </li>
+            <li>
+              <a href="/views/productos/productos.html" class="nav_main_li_a font_15">Productos</a>
+            </li>
+            <li>
+              <a href="/views/servicios/servicios.html" class="nav_main_li_a font_15">Servicios</a>
+            </li>
+            <li>
+              <a href="/views/quienes/quienes_somos.html" class="nav_main_li_a font_15">¿Quiénes somos?</a>
+            </li>
+            <li>
+              <a href="/views/contacto/contacto.html" class="nav_main_li_a font_15">Contacto</a>
+            </li>
+          </ul>      
+          <ul id="id_nav_main_ul_mobile" class="nav_main_ul_mobile collapsed">
+            <i class="font_bold font_3 nav_main_ul_mobile_salida_icono" onclick="cerrar_nav()">></i>
+            <li class="nav_main_li_mobile">
+              <a href="/index.html" class="nav_main_li_a_mobile font_15" >Inicio</a>
+            </li>
+            <li>
+              <a href="/views/productos/productos.html" class="nav_main_li_a_mobile font_15">Productos</a>
+            </li>
+            <li>
+              <a href="/views/servicios/servicios.html" class="nav_main_li_a_mobile font_15" >Servicios</a>
+            </li>
+            <li>
+              <a href="/views/quienes/quienes_somos.html" class="nav_main_li_a_mobile font_15">¿Quiénes somos?</a>
+            </li>
+            <li>
+              <a href="/views/contacto/contacto.html" class="nav_main_li_a_mobile font_15" >Contacto</a>
+            </li>
+          </ul>
+          <div class="nav_div_icons">
+            <i class="fas fa-shopping-cart nav_carrito" onclick="mostrar_carrito(true)"></i>
+            <svg onclick="abrir_nav()" class="svg-inline--fa fa-bars fa-w-14 nav_barras" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+          </div>
+        </nav>
+    </header>
+    <article class="a_c_s">
+        
+
+        <main class="main_content">
+            <aside class="aside_im">
+                <div class="atras">
+                    <a href="servicios.html"><p> < Volver atrás</p></a>
+                </div>
+            </aside>
+            <div class="main_content_text">
+                <div>
+                    <h1>Solución de impresiones ecológicas</h1>
+                    <p>Nuestro servicio de impresión con cartuchos recargables ofrece soluciones de impresión de alta calidad, en blanco y negro o en color, de sus documentos con precisión y eficiencia, para todas sus necesidades comerciales, incluidos volantes, folletos y materiales promocionales.
+                        Ya sea que necesite tarjetas de presentación, folletos, volantes o cualquier otro tipo de proyecto de impresión, podemos ayudarlo. Nuestro equipo de última generación y tecnología de impresión avanzada garantizan que sus materiales de impresión sean brillantes, vibrantes y de la más alta calidad. También ofrecemos una variedad de opciones de acabado, que incluyen encuadernación, laminación y corte, para garantizar que sus materiales impresos sean exactamente lo que necesita. Con nuestro servicio de impresión, puede confiar en que sus proyectos se completarán a tiempo, dentro del presupuesto y con los más altos estándares de calidad y profesionalismo.
+                    </p>
+                </div>
+            </div>
+        </main>  
+    </article>
+    <aside class="aside_container display_none">
+
+        <div class="aside_container_salida" >
+          <i class="font_bold font_3 aside_container_salida_icono" onclick="mostrar_carrito(false)">></i>
+        </div>
+    
+        <div id="carrito_contenido" class="aside_container_div">
+    
+          <h3 class="font_bold font_2 padding_vertical_carrito">Carrito de Compras</h3>
+    
+          <hr>
+    
+          <h3 class="font_15 padding_vertical_carrito">Producto/s</h3>
+    
+          <hr>
+    
+          <div id="carrito_items_container">
+    
+          </div>
+          
+          <hr class="prueba1">
+    
+          <hr>
+    
+          <div class="carrito_div_total padding_vertical_carrito">
+            <div>Total</div>
+            <div>$ 
+              <span id="precio_total_js">0</span>
+            </div>
+          </div>
+          <div id="boton_reservar" class="carrito_div_reservar font_15" onclick="reservar_carrito()">Reservar</div>
+    
+        </div>
+      </aside>
+    <section class="sec_car">
+        <div class="lineas">
+            <div class="l"></div>
+                <p><strong>Características y beneficios de nuestros servicios</strong></p>
+            <div class="l"></div>
+        </div>
+        <div class="car_ben">
+            <div>
+                <h1>Características</h1>
+                <ul>
+                    <li>Impresiones de alta calidad</li>
+                    <li>Amplia gama de útiles escolares.</li>   
+                    <li>Materiales ecológicos utilizados en los productos.</li>   
+                    <li>Opciones de embalaje sostenible</li>     
+                    <li>Sitio web fácil de usar con fácil navegación y opciones de pago seguras</li>      
+                </ul>
+            </div>
+            <div>
+                <h1>Beneficios</h1>
+                <ul>
+                    <li>Reducción de la huella de carbono y contribución a la sostenibilidad ambiental</li>
+                    <li>Aumento de la reputación de la marca y la fidelidad de los clientes entre aquellos que priorizan el respeto por el medio ambiente</li>   
+                    <li>Ahorro de costes a largo plazo mediante el uso eficiente de recursos y materiales</li>   
+                    <li>Oportunidad de acceder al creciente mercado de consumidores con conciencia ecológica</li>     
+                    <li>Impacto positivo en la comunidad local y la sociedad en general mediante la promoción de prácticas comerciales responsables.</li>      
+                </ul>
+            </div>
+        </div>
+        <div class="car_ben_test">
+            <h1>Testimonio de usuario</h1>
+            <h2>Verónica Silva</h2>
+            <p>¡Estoy absolutamente encantada con el compromiso de esta tienda gráfica de ser más ecológica!</p>
+        </div>
+        <div class="cb_p"></div>
+    </section>
+    <footer>
+        <div>
+          <ul class="footer_ul">
+            <li class="font_1">
+              <legend class="font_bold">Trabajo grupal para la materia Diseño y desarrollo web</legend>
+            </li>
+            <li class="font_1">
+              <span class="font_bold">Integrantes del grupo:</span> Aguilera Braian Alejandro, Marco Enzo Augusto, Martos Tomás Joaquín
+            </li>
+            <li class="font_1">
+              <span class="font_bold">Enlance al sitio del grupo: </span> 
+              <a href="https://enzoamarco.github.io/grupo/index.html" target="_blank">enzoamarco.github.io/grupo</a>
+            </li>
+            <li class="font_1">
+              <span class="font_bold">Derechos reservados, Imagenes sacadas de:</span>
+              <ul class="footer_ul_derechos">
+                <li>Imágenes creadas con la IA dream.ai</li>
+                <li>Photo by Jason Goodman on Unsplash</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+    
+        <div>
+          <img src="/assets/uadeImg.png" alt="Logo uade" class="uade_img">
+        </div>
+        
+      </footer>
+      <script src="/cart.js"></script>
+      <script src="/navMobile.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+</html>

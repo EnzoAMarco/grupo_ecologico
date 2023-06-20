@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  color: #0F0F0F;
 }
 
 body{
@@ -38,6 +37,10 @@ a:active {
   color: #0F0F0F;
   background-color: transparent;
   text-decoration: none;
+}
+
+.display_none{
+  display: none;
 }
 
 /* fonts */
@@ -309,7 +312,7 @@ footer{
   .nav_main_ul_mobile_salida_icono{
     position: absolute;
     top: .5rem;
-    left: 1rem;
+    right: 1rem;
     color: #E5E4D5 !important;
   }
   

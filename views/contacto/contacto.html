@@ -12,7 +12,7 @@
 
 </head>
 <body>
-    <header>
+  <header>
         <nav class="nav_main">
           <a class="nav_white_logo">
             <img src="/assets/logo_white.png" alt="logo blanco de la empresa" class="nav_white_logo_img">
@@ -36,68 +36,101 @@
           </ul>
           <i class="nav_carrito" onclick="mostrar_carrito(true)">carrito</i>
         </nav>
-      </header>
-<main>
+  </header>
+  <main>
+      <section class="section_container">
+          
+          <div class="div_info">
 
-    <section class="section_container">
-        
-        <div class="div_info">
+              <div class="div_info_titulo">
+                  <h1 class="color-text font_2" id="preguntas">¿Tienes preguntas?</h1>
+                  <h2 class="color-text" id="dudas"><em>Déjanos acá tus dudas</em></h2>
+              </div>
+              
+              <div class="div_info_data">
 
-            <div class="div_info_titulo">
-                <h1 class="color-text font_2" id="preguntas">¿Tienes preguntas?</h1>
-                <h2 class="color-text" id="dudas"><em>Déjanos acá tus dudas</em></h2>
-            </div>
-            
-            <div class="div_info_data">
+                  <div class="div_info_data_caja">
+                      <h3 class="color-text font_15">¿Emergencia? Llámanos</h3>
+                      <br>
+                      <a class="links" href="https://wa.me/1145658495" target="_blank"> 1145658495</a>
+                  </div>
+              
+                  <div class="div_info_data_caja">
+                      <h3 class="color-text font_15">Envíanos un mail</h3>
+                      <br>
+                      <a class="links font_1" href="mailto:greenink@gmail.com" target="_blank">greenink@gmail.com</a>
+                  </div>
+              
+                  <div class="div_info_data_caja">
+                      <h3 class="color-text font_15">Encuentra el estudio</h3>
+                      <br>
+                      <iframe 
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108977.03828706787!2d-64.19421235!3d-31.3994532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses-419!2sar!4v1686916995043!5m2!1ses-419!2sar" 
+                    class="iframe_contacto" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+                  </div>  
 
-                <div class="div_info_data_caja">
-                    <h3 class="color-text font_15">¿Emergencia? Llámanos</h3>
-                    <br>
-                    <a class="links" href="https://wa.me/1145658495" target="_blank"> 1145658495</a>
-                </div>
-            
-                <div class="div_info_data_caja">
-                    <h3 class="color-text font_15">Envíanos un mail</h3>
-                    <br>
-                    <a class="links font_1" href="mailto:greenink@gmail.com" target="_blank">greenink@gmail.com</a>
-                </div>
-            
-                <div class="div_info_data_caja">
-                    <h3 class="color-text font_15">Encuentra el estudio</h3>
-                    <br>
-                    <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108977.03828706787!2d-64.19421235!3d-31.3994532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses-419!2sar!4v1686916995043!5m2!1ses-419!2sar" 
-                   class="iframe_contacto" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
-                </div>  
+              </div>
 
-            </div>
+          </div>
 
+          <div class="div_form">
+
+              <form id="mi_formulario" class="formulario" onsubmit="return validarFormulario()">
+
+                  <h2 class="form_consulta_titulo font_2">Envíanos tu consulta</h2>
+
+                  <input class="formulario_input" type="text" name="nombre" id="nombre_input" placeholder="Nombre" required>
+
+                  <input class="formulario_input" type="text" name="apellido" id="apellido_input" placeholder="Apellido" required>
+
+                  <input class="formulario_input" type="text" name="mail" id="mail_input" placeholder="Mail" required>
+
+                  <input class="formulario_input" type="text" name="tema" id="tema_input" placeholder="Tema" required>
+
+                  <textarea class="formulario_input formulario_textarea" type="text" id="mensaje_input" placeholder="Ingrese su mensaje" required></textarea>
+
+                  <input class="formulario_input_submit font_1" type="submit" id="submit_input" value="Enviar">
+              </from>
+
+          </div>
+
+      </section>
+  </main>
+  <aside class="aside_container display_none">
+
+    <div class="aside_container_salida" >
+      <i class="font_bold font_3 aside_container_salida_icono" onclick="mostrar_carrito(false)">></i>
+    </div>
+
+    <div id="carrito_contenido" class="aside_container_div">
+
+      <h3 class="font_bold font_2 padding_vertical_carrito">Carrito de Compras</h3>
+
+      <hr>
+
+      <h3 class="font_15 padding_vertical_carrito">Producto/s</h3>
+
+      <hr>
+
+      <div id="carrito_items_container">
+
+      </div>
+      
+      <hr class="prueba1">
+
+      <hr>
+
+      <div class="carrito_div_total padding_vertical_carrito">
+        <div>Total</div>
+        <div>$ 
+          <span id="precio_total_js">0</span>
         </div>
+      </div>
+      <div id="boton_reservar" class="carrito_div_reservar font_15" onclick="reservar_carrito()">Reservar</div>
 
-        <div class="div_form">
-
-            <form id="mi_formulario" class="formulario" onsubmit="return validarFormulario()">
-
-                <h2 class="form_consulta_titulo font_2">Envíanos tu consulta</h2>
-
-                <input class="formulario_input" type="text" name="nombre" id="nombre_input" placeholder="Nombre" required>
-
-                <input class="formulario_input" type="text" name="apellido" id="apellido_input" placeholder="Apellido" required>
-
-                <input class="formulario_input" type="text" name="mail" id="mail_input" placeholder="Mail" required>
-
-                <input class="formulario_input" type="text" name="tema" id="tema_input" placeholder="Tema" required>
-
-                <textarea class="formulario_input formulario_textarea" type="text" id="mensaje_input" placeholder="Ingrese su mensaje" required></textarea>
-
-                <input class="formulario_input_submit font_1" type="submit" id="submit_input" value="Enviar">
-            </from>
-
-        </div>
-
-    </section>
-</main>
-<footer>
+    </div>
+  </aside>
+  <footer>
     <div>
       <ul class="footer_ul">
         <li class="font_1">
@@ -127,6 +160,8 @@
   </footer>
   <script src="https://maps.googleapis.com/maps/api/js?client=google-maps-embed&paint_origin=&libraries=geometry,search&v=3.exp&language=es_419&region=ar&callback=onApiLoad" nonce="qicnrierdkc5_guxm6g0zg"></script>
   <script src="/views/contacto/contacto.js"></script>
-
+  <script src="/cart.js"></script>
+  <script src="/navMobile.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </body>
 </html>
