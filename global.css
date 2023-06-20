@@ -88,6 +88,10 @@ a:active {
   position: fixed;
 }
 
+.nav_main_li_onn{
+  border: 1px solid #211E20;
+}
+
 .nav_white_logo_img{
   height: 3rem;
   width: 3rem;
