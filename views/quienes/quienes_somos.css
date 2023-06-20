@@ -19,7 +19,7 @@
 }
 
 .im_quien{
-  background-image: url(/assets/Img_braian/Mision.png);
+  background-image: url(/grupo_ecologico/assets/Img_braian/Mision.png);
   width: 40vw;
   height: 50vh;
   background-position: center;
@@ -60,7 +60,7 @@
 }
 
 .im_bra{
-  background-image: url(/assets/Img_braian/bra.png);
+  background-image: url(/grupo_ecologico/assets/Img_braian/bra.png);
   width: 20vw;
   height: 20vh;
   background-repeat: no-repeat;
@@ -83,7 +83,7 @@
 }
 
 .im_enzo{
-  background-image: url(/assets/Img_braian/enzo.png);
+  background-image: url(/grupo_ecologico/assets/Img_braian/enzo.png);
   width: 20vw;
   height: 20vh;
   background-repeat: no-repeat;
@@ -107,7 +107,7 @@
 }
 
 .im_tomi{
-  background-image: url(/assets/Img_braian/tomi.png);
+  background-image: url(/grupo_ecologico/assets/Img_braian/tomi.png);
   width: 20vw;
   height: 20vh;
   background-repeat: no-repeat;
@@ -150,7 +150,7 @@
   }
 
   .im_quien{
-      background-image: url(/assets/Img_braian/Mision.png);
+      background-image: url(/grupo_ecologico/assets/Img_braian/Mision.png);
       width: 90vw;
       height: 50vh;
       background-position: center;

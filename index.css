@@ -45,7 +45,7 @@ body{
 }
 
 .colu_im_greenink{
-  background-image: url('/assets/Img_braian/GreenInk.png');
+  background-image: url('/grupo_ecologico/assets/Img_braian/GreenInk.png');
   width: 51vw;
   height: 20vh;
   background-position: center;
@@ -54,7 +54,7 @@ body{
 }
 
 .servis_im_cartu{
-  background-image: url('/assets/Img_braian/cartuchos.png');
+  background-image: url('/grupo_ecologico/assets/Img_braian/cartuchos.png');
   width: 30vw;
   height: 100vh;
   background-position: center;
@@ -158,7 +158,7 @@ body{
 }
 
 .colu_im_greenink{
-  background-image: url('/assets/Img_braian/GreenInk.png');
+  background-image: url('/grupo_ecologico/assets/Img_braian/GreenInk.png');
   width: 51vw;
   height: 20vh;
   background-position: center;
@@ -201,7 +201,7 @@ body{
 @media screen and (max-width: 580px){
 
   .colu_im_greenink{
-      background-image: url('/assets/Img_braian/GreenInk.png');
+      background-image: url('/grupo_ecologico/assets/Img_braian/GreenInk.png');
       width: 70vw;
       height: 20vh;
       background-position: center;
