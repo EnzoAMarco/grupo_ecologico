@@ -7,6 +7,10 @@
   <!-- CSS -->
   <link rel="stylesheet" href="/global.css">
   <link rel="stylesheet" href="/views/productos/productos.css">
+
+  <!-- carrito icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
   <title>Greenink</title>
 </head>
 <body> 
@@ -17,10 +21,10 @@
       </a>
       <ul class="nav_main_ul">
         <li class="nav_main_li">
-          <a href="#" class="nav_main_li_a font_15">Inicio</a>
+          <a href="/index.html" class="nav_main_li_a font_15">Inicio</a>
         </li>
         <li>
-          <a href="#" class="nav_main_li_a font_15">Productos</a>
+          <a href="/views/productos/productos.html" class="nav_main_li_a font_15">Productos</a>
         </li>
         <li>
           <a href="#" class="nav_main_li_a font_15">Servicios</a>
@@ -29,10 +33,31 @@
           <a href="#" class="nav_main_li_a font_15">¿Quiénes somos?</a>
         </li>
         <li>
-          <a href="#" class="nav_main_li_a font_15">Contacto</a>
+          <a href="/views/contacto/contacto.html" class="nav_main_li_a font_15">Contacto</a>
+        </li>
+      </ul>      
+      <ul id="id_nav_main_ul_mobile" class="nav_main_ul_mobile">
+        <i class="font_bold font_3 nav_main_ul_mobile_salida_icono" onclick="cerrar_nav()">></i>
+        <li class="nav_main_li_mobile">
+          <a href="/index.html" class="nav_main_li_a_mobile font_15">Inicio</a>
+        </li>
+        <li>
+          <a href="/views/productos/productos.html" class="nav_main_li_a_mobile font_15">Productos</a>
+        </li>
+        <li>
+          <a href="#" class="nav_main_li_a_mobile font_15">Servicios</a>
+        </li>
+        <li>
+          <a href="#" class="nav_main_li_a_mobile font_15">¿Quiénes somos?</a>
+        </li>
+        <li>
+          <a href="/views/contacto/contacto.html" class="nav_main_li_a_mobile font_15">Contacto</a>
         </li>
       </ul>
-      <i class="nav_carrito" onclick="mostrar_carrito(true)">carrito</i>
+      <div class="nav_div_icons">
+        <i class="fas fa-shopping-cart nav_carrito" onclick="mostrar_carrito(true)"></i>
+        <svg onclick="abrir_nav()" class="svg-inline--fa fa-bars fa-w-14 nav_barras" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+      </div>
     </nav>
   </header>
   <section >
@@ -87,7 +112,9 @@
 
       </div>
 
-      <div id="container_productos" class="article_products_boxes_container"></div>
+      <div id="container_productos" class="article_products_boxes_container">
+
+      </div>
 
     </article>
   </section>
@@ -97,7 +124,7 @@
       <i class="font_bold font_3 aside_container_salida_icono" onclick="mostrar_carrito(false)">></i>
     </div>
 
-    <div class="aside_container_div">
+    <div id="carrito_contenido" class="aside_container_div">
 
       <h3 class="font_bold font_2 padding_vertical_carrito">Carrito de Compras</h3>
 
@@ -107,57 +134,21 @@
 
       <hr>
 
-      <div class="padding_vertical_carrito">
-        <ul>
-          <div class="carrito_ul_div_Superior">
-            <li>
-              <div class="article_products_boxes_container_img_agendas producto_img_carrito">as</div>
-            </li>
-            
-            <div class="carrito_ul_div_Superior_txt ">
-              <li class="font_15">Agenda/s</li>
-  
-              <li class="font_1">Unidades: 2</li>
-            </div>
+      <div id="carrito_items_container">
 
-          </div>
-          <div class="carrito_ul_div_inferior">
-            <li class="font_15">$ 60</li>
-          </div>
-
-        </ul>
-      </div>
-
-      <hr class="prueba1">
-
-      <div class="padding_vertical_carrito">
-        <ul>
-          <div class="carrito_ul_div_Superior">
-            <li>
-              <div class="article_products_boxes_container_img_bolsas producto_img_carrito">as</div>
-            </li>
-            
-            <div class="carrito_ul_div_Superior_txt ">
-              <li class="font_15">Bolsa/s</li>
-  
-              <li class="font_1">Unidades: 1</li>
-            </div>
-
-          </div>
-          <div class="carrito_ul_div_inferior">
-            <li class="font_15">$ 50</li>
-          </div>
-
-        </ul>
       </div>
       
+      <hr class="prueba1">
+
       <hr>
 
       <div class="carrito_div_total padding_vertical_carrito">
         <div>Total</div>
-        <div>$ 110</div>
+        <div>$ 
+          <span id="precio_total_js">0</span>
+        </div>
       </div>
-      <div class="carrito_div_reservar font_15">Reservar</div>
+      <div id="boton_reservar" class="carrito_div_reservar font_15" onclick="reservar_carrito()">Reservar</div>
 
     </div>
   </aside>
@@ -176,6 +167,10 @@
         </li>
         <li class="font_1">
           <span class="font_bold">Derechos reservados, Imagenes sacadas de:</span>
+          <ul class="footer_ul_derechos">
+            <li>Imágenes creadas con la IA dream.ai</li>
+            <li>Photo by Jason Goodman on Unsplash</li>
+          </ul>
         </li>
       </ul>
     </div>
@@ -186,5 +181,7 @@
     
   </footer>
   <script src="/buy_cart.js"></script>
+  <script src="/navMobile.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </body>
 </html>

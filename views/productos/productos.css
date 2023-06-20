@@ -95,6 +95,11 @@
   cursor: pointer;
 }
 
+.article_products_cats_productos_li:hover{
+  border-bottom: 1px solid #211E20;
+  margin-bottom: -1px;
+}
+
 .article_products_cats_productos_input{
   margin: 1rem 0;
 }
@@ -191,6 +196,13 @@ select{
   color: #1C3F39;
 }
 
+.article_products_boxes_container_add_cart_icon:hover{
+  background-color: #E5E4D5;
+  color: #1C3F39;
+  opacity: .8;
+  cursor: pointer;
+}
+
 .article_products_boxes_container_data{
   display: flex;
   flex-flow: row;
@@ -241,4 +253,96 @@ select{
 
 .order_6{
   order: 6;
+}
+
+
+@media (max-width: 1600px){
+  .article_carrousel_div_txt{
+      padding: 10vh 0 0 0;
+  }
+
+}
+
+@media (max-width: 1100px){
+
+  .article_carrousel{
+    display: flex;
+    /* flex-flow: row-reverse; */
+    /* justify-content: space-between; */
+    flex-flow: row;
+    height: auto; 
+  }
+  .article_carrousel_div_txt{
+    display: flex;
+    flex-flow: column;
+    padding: 12vh 0 2rem 0;
+    width: 50vw;
+  }
+  
+  .article_carrousel_img{
+    width: 40vw;
+    height: auto;
+  }
+
+  .article_products_boxes_container_img {
+    width: 36vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 700px){
+
+  .article_carrousel{
+    display: flex;
+    flex-flow: column;
+    height: auto; 
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .article_carrousel_div{
+    width: 80vw;
+  }
+
+  .article_carrousel_div_txt{
+    display: flex;
+    flex-flow: column;
+    padding: 12vh 0 2rem 0;
+    width: 90vw;
+  }
+  
+  /* .article_products_boxes_container_img {
+    width: 36vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  } */
+
+  .article_carrousel_img{
+    display: none;
+    width: 100vw;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px){
+  
+  .article_products{
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .article_products_cats_productos{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+
+  }
+  .article_products_boxes_container_img {
+    width: 60vw;
+    background: #E5E4D5 2px solid;
+    border-radius: 10px;
+  }
 }
