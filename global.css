@@ -196,6 +196,7 @@ a:active {
   color: #F5F4F4;
   height: 3rem;
   width: 100%;
+  cursor: pointer;
 }
 
 .prueba1 {
