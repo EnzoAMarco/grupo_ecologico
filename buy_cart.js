@@ -156,7 +156,7 @@ const auxIdFunc = (idItem) => {
 const carrousel = (state) => {
   console.log(foto_carrousel.src)
   if (state){
-    foto_carrousel.src="/assets/mochilas.png"
+    foto_carrousel.src="/grupo_ecologico/assets/mochilas.png"
     
     carrousel_h1.innerHTML = 'Mochilas recicladas';
     carrousel_p.innerHTML = 'En GreenInk, estamos comprometidos con la creación de soluciones sostenibles en la industria gráfica. Por eso, queremos celebrar tus compras con una oferta especial. Al adquirir productos por un monto superior a 20 mil pesos, te regalaremos una mochila reciclada, fabricada con materiales amigables con el medio ambiente. Esta es nuestra manera de agradecerte por apoyar nuestro compromiso con el planeta y de invitarte a unirte a nuestra causa. ¡Haz tu compra ahora y llévate este regalo exclusivo con GreenInk!';
@@ -165,7 +165,7 @@ const carrousel = (state) => {
     button_carrousel_2.classList.remove('button_on');  
   }
   else {
-    foto_carrousel.src="/assets/carrousel2invertido.png"
+    foto_carrousel.src="/grupo_ecologico/assets/carrousel2invertido.png"
     
     carrousel_h1.innerHTML = 'Sumá puntos';
     carrousel_p.innerHTML = 'En GreenInk, nos enorgullecemos de nuestro compromiso con la sostenibilidad en el mundo de los gráficos. Y ahora, con nuestro programa de puntos, estamos encantados de ofrecer aún más incentivos a nuestros clientes. Simplemente entregándonos sus revistas y periódicos viejos, puede ganar puntos que pueden usarse para nuestros productos de alta calidad. Entonces, ¿por qué no unirse a nuestra misión de reducir los desechos y proteger el medio ambiente, mientras disfruta de los beneficios de nuestros servicios creativos de primer nivel? ¡Traiga sus materiales de lectura hoy y comience a ganar esos valiosos puntos!';
