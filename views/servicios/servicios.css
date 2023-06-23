@@ -1045,6 +1045,10 @@
 
 /*------------------------CLIENTES_SATISFECHOS------------------------*/
 
+.testimonios_hover_23{
+    cursor: pointer;
+}
+
 .cs{
     display: flex;
     flex-flow: column;
